@@ -1,0 +1,68 @@
+:root {
+  --main-font: Raleway;
+  --accent-font: 'STIX Two Text';
+  --bg-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+  background-color: var(--bg-color, #F3EFEC);
+  color: var(--text-color, #312A4E);
+  font-family: var(--main-font, sans-serif);
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+.heading {
+  font-family: var(--accent-font, serif);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90%;
+  text-align: center;
+}
+
+.content-section {
+  padding: 0 5vi;
+}
+
+.header__title {
+  margin-bottom: 40px;
+  margin-top: 144px;
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
+@media screen and (max-width: 1440px) {
+  .header__title {
+    margin-top: calc(36px + (144 - 36) * (100vw - 320px) / (1440 - 360));
+  }
+}
+
+.content__title {
+  margin: 91px 0 32px;
+}
+
+@media screen and (max-width: 1440px) {
+  .content__title {
+    margin: 7% 0 2.5%;
+  }
+}
