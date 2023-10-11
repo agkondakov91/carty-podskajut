@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Учебный проект «Карты подскажут» от Яндекс.Практикум"
+    >
+    <meta
+      name="keywords"
+      content="обучение, html, практика, css, верстка, адаптив, JS, JavaScript"
+    >
+    <meta name="author" content="Александр Кондаков">
     <title>Карты подскажут</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
@@ -14,6 +23,36 @@
   <body class="page theme_dark">
     <header class="header">
       <h1 class="heading header__title content-section">Карты подскажут</h1>
+      <nav class="header__menu content-section">
+        <div class="header__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="135" height="25">
+            <use href="./images/logo.svg#logo"></use>
+          </svg>
+        </div>
+        <ul class="header__theme-toggler">
+          <li>
+            <button
+              class="header__theme-button header__theme-button_type_dark"
+              type="button"
+              title="Тёмная тема оформления"
+              aria-label="Выбрать тёмную тему оформления"
+            >
+              Тёмная
+            </button>
+          </li>
+          <li>
+            <button
+              class="header__theme-button header__theme-button_type_light header__theme-button_is-active"
+              type="button"
+              title="Светлая тема оформления"
+              aria-label="Выбрать светлую тему оформления"
+              disabled
+            >
+              Светлая
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="content content-section">
       <h2 class="heading content__title">
@@ -114,6 +153,12 @@
           >.
         </p>
       </div>
+      <article class="content__card">
+        <h3 class="content__card-title heading" lang="en">
+          Use an <span class="colored-text">old idea</span>
+        </h3>
+        <p class="content__card-subtitle">Воспользуйтесь старой идеей</p>
+      </article>
       <h2 class="heading content__title">Кто пользовался Oblique Strategies</h2>
       <div class="content__text-block content__text-block_type_first-lettered">
         <ul class="content__list">
@@ -124,9 +169,11 @@
         </ul>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p class="footer__copyright">Vёrstka</p>
+    </footer>
 
     <!-- Раскомментируйте строчку ниже, когда вёрстка будет готова. Если вы назвали все классы. как нужно, переключатель темы будет работать -->
-    <!-- <script src="./scripts/theme-changer.js"></script> -->
+    <script src="./scripts/theme-changer.js"></script>
   </body>
 </html>
