@@ -1,9 +1,9 @@
 :root {
   --main-font: Raleway;
-  --accent-font: 'STIX Two Text';
-  --bg-color: #F3EFEC;
-  --text-color: #312A4E;
-  --accent-color: #FFAB6B;
+  --accent-font: "STIX Two Text";
+  --bg-color: #f3efec;
+  --text-color: #312a4e;
+  --accent-color: #ffab6b;
 }
 
 *,
@@ -15,8 +15,8 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
-  background-color: var(--bg-color, #F3EFEC);
-  color: var(--text-color, #312A4E);
+  background-color: var(--bg-color, #f3efec);
+  color: var(--text-color, #312a4e);
   font-family: var(--main-font, sans-serif);
 }
 
@@ -65,4 +65,88 @@ figure {
   .content__title {
     margin: 7% 0 2.5%;
   }
+}
+
+.content__text-block {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content__text-block .content__paragraph:not(:last-of-type) {
+  margin-block-end: 1.5em;
+}
+
+.content__paragraph a {
+  color: inherit;
+}
+
+.content__blockquote {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 200%;
+  margin: 0 auto 1.5em;
+  inline-size: 75%;
+}
+
+.content__list {
+  list-style: none;
+  padding: 0 0 0 40px;
+}
+
+.content__list li {
+  position: relative;
+}
+
+.content__list li:not(:last-of-type) {
+  margin-block-end: 10px;
+}
+
+.content__list li::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  inline-size: 15px;
+  block-size: 15px;
+  background-image: url(../images/marker-light.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.content__text-block_type_first-lettered
+  .content__paragraph:first-of-type::first-letter {
+    display: inline-block;
+    background-color: var(--accent-color);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0 4px;
+    margin-inline-end: 1px;
+}
+
+.content__figure {
+  position: relative;
+  inline-size: calc(100% + 10vi);
+  margin: 7% auto;
+  inset-inline-end: 5vi;
+}
+
+.content__picture {
+  inline-size: 100%;
+}
+
+.content__picture-caption {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px 0;
+  margin-top: 4px;
+  border-block-end: 1px solid var(--text-color);
 }
