@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="Учебный проект «Карты подскажут» от Яндекс.Практикум"
@@ -14,13 +14,13 @@
     >
     <meta name="author" content="Александр Кондаков">
     <title>Карты подскажут</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
-  <body class="page theme_dark">
+  <body class="page theme-dark">
     <header class="header">
       <h1 class="heading header__title content-section">Карты подскажут</h1>
       <nav class="header__menu content-section">
@@ -87,17 +87,18 @@
           <source
             srcset="./images/cards-1x.avif 1x, ./images/cards-2x.avif 2x"
             type="image/avif"
-          />
+          >
           <source
             srcset="./images/cards-1x.webp 1x, ./images/cards-2x.webp 2x"
             type="image/webp"
-          />
+          >
           <img
             loading="lazy"
             class="content__picture"
-            srcset="./images/cards-1x.png 1x, ./images/cards-2x.png 2x"
+            srcset="./images/cards-2x.png 2x"
+            src="./images/cards-1x.png"
             alt="Изображение белого телефона Apple, горшка с растением и картой на столе"
-          />
+          >
         </picture>
         <figcaption class="content__picture-caption">
           Колода Oblique Strategies
@@ -172,8 +173,6 @@
     <footer class="footer">
       <p class="footer__copyright">Vёrstka</p>
     </footer>
-
-    <!-- Раскомментируйте строчку ниже, когда вёрстка будет готова. Если вы назвали все классы. как нужно, переключатель темы будет работать -->
     <script src="./scripts/theme-changer.js"></script>
   </body>
 </html>
